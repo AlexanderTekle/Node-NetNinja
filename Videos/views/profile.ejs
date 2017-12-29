@@ -1,0 +1,21 @@
+<!--for video 17, 17-ServingHTMLPages.js-->
+
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link href ='/assets/styles.css' rel = "stylesheet" type='text/css'/>
+  </head>
+
+  <body>
+    <%include partials/nav.ejs %>
+    <h1>Welcome to the proflie of <%= person %></h1>
+    <p>Age: <%= data.age %> </p>
+    <p>Job: <%=data.job%></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <% data.hobbies.forEach(function(item){ %>
+        <li><%=item%></li>
+      <%});%>
+  </body>
+</html>

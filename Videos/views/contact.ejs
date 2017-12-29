@@ -1,0 +1,25 @@
+<!-- made originally for lesson 19, routing -->
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link href ='/assets/styles.css' rel = "stylesheet" type='text/css'/>
+
+  </head>
+
+  <body>
+    <h1>Contact Us</h1>
+    <p>Contact us, the coolest on the web right here.</p>
+
+    <p><%= qs.dept %></p>
+
+    <form id ="contact-form" method="POST" action "/contact">
+      <label for"who">Who do you want to contact?</label>
+      <input type = "text" name = "who" value="<%= qs.person %>">
+      <label for="department">Which department?</label>
+      <input type="text" name="department" value="<%=qs.dept%>">
+      <label for="email" name="email"/></label>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
